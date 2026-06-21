@@ -18,8 +18,6 @@ with open("sales_data.csv", "w", newline="") as file:
         "city"
     ])
     writer.writerows(sales)
-print("sales.csv created successfully!")
-
 
 ### Question 1: Read the CSV File
 try:
@@ -68,7 +66,7 @@ try:
             c+=1
             revenue=revenue+int(line["quantity"])*int(line["price"])
         Average_Order_Revenue=revenue/c
-        print(f"Average Order Revenue:{Average_Order_Revenue:.2f}")
+        print(f"Average Order Revenue: {Average_Order_Revenue:.2f}")
 except:
     print("File not found")
 
